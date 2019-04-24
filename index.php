@@ -6,7 +6,7 @@ if (isset($_GET['t'])) {
 	$toConvert = strtoupper($toConvert);
 
 	$search  = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ',');
-	$replace = array(' alpha', 'bravo', ' charlie', ' delta', ' echo', ' foxtrot', ' golf', ' hotel', ' india', ' juliet', ' kilo', ' lima', ' mike', ' november', ' oscar', ' papa', ' quebec', ' romeo', ' sierra', ' tango', ' uniform', ' victor', ' whiskey', ' x-ray', ' yankee', ' zulu', ' comma');
+	$replace = array(' alpha', ' bravo', ' charlie', ' delta', ' echo', ' foxtrot', ' golf', ' hotel', ' india', ' juliet', ' kilo', ' lima', ' mike', ' november', ' oscar', ' papa', ' quebec', ' romeo', ' sierra', ' tango', ' uniform', ' victor', ' whiskey', ' x-ray', ' yankee', ' zulu', ' comma');
 
 	$final = str_replace($search, $replace, $toConvert);
 
